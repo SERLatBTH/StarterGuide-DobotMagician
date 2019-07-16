@@ -62,6 +62,8 @@ Here you can see the included components and their locations. The Dobot Magician
 
 ## How to make it works
 
+Here is the breif introduction of how to operate the Dobot Magician with the software DobotStudio, allowing you to quickly know and use the robotic arm. For details, please go [here](https://www.dobot.cc/downloadcenter.html?sub_cat=73#sub-download) to download the manuals.
+
 1. Connecting Cables to the Dobot Magician
 
    Step 1  Connect the Dobot Magician to your compututer with the supplied USB cable
@@ -123,9 +125,9 @@ Here you can see the included components and their locations. The Dobot Magician
     
     Prerequisites
       
-      * The DobotStudio has been installed. For details, see 2.2 Installing the DobotStudio.
+      * The DobotStudio has been installed. For details, see 2. Installing the DobotStudio.
       
-      * The Dobot Magician is powered on. For details, see 2.3 Powering On/Off the Dobot Magician.
+      * The Dobot Magician is powered on. For details, see 3. Powering On/Off the Dobot Magician.
    
    Procedure
     * Step 1 Double-click the desktop shortcut to the DobotStudio.
