@@ -63,20 +63,77 @@ Here you can see the included components and their locations. The Dobot Magician
 ## How to make it works
 
 1. Connecting Cables to the Dobot Magician
+
    Step 1  Connect the Dobot Magician to your compututer with the supplied USB cable
+  
    Step 2  Connect the Dobot Magician to the electrical outlet with the supplied power adaper
+   
 2. Installing the DobotStudio
+
    1. System Requirements
+   
       * Windows 7, Windows 7, Windows 8, and Windows 10 (This manual is explained based on this version)
       * macOS 10.10, macOS 10.11, and macOS 10.12
+      
    2. Obtaining the DobotStudio Package
+   
       Before using Dobot Magician, download the Windows DobotStudio package from https://www.dobot.cc/downloadcenter.html. The macOS version is also downloadable in this URL
+      
    3. Installing the DobotStudio
+   
       Prerequisites
+      
          The DobotStudio package has been obtained.
+         
       Procedure
-          Step 1 Unpack the DobotStudio package to a destination directory.
-          For example, this directory is Installation Directory\DobotStudio. You can install
-          the DobotStudio to another location based on site requirements.
-       Step 2In the installation directory double-click DobotStudioSetup.exe. The Select Setup
-          Language dialog box is displayed, as shown in Figure 2.4.
+      
+        Step 1 Unpack the DobotStudio package to a destination directory.
+
+        For example, this directory is Installation Directory\DobotStudio. You can install the DobotStudio to another location based on site requirements.
+
+        Step 2 In the installation directory double-click DobotStudioSetup.exe. The Select Setup Language dialog box is displayed.
+
+        Step 3 Choose a setup language such as English
+
+        Step 4 Click OK to follow the on-screen instructions to continue with the installation. During the installation, the Driver Installation dialog box is displayed.
+
+        Step 5 Click Next to install the first driver, and then click INSTALL to install the second driver.
+
+        When the drivers are installed successfully, the Completing the Device Driver Installation Wizard dialog box is displayed . Click Finish.
+
+        Step 6 Click Next to continue to install the DootStudio by following the prompts on the Setup-DobotStudio dialog box.
+
+        When the installation is complete, the Completing the DoobotStudio Setup Wizard dialog box is displayed, click Finish.
+       
+       Verifying the Installation
+         * Verifying the DobotStudio
+            If the DobotStudio is launched and runs properly by double-clicking the desktop shortcut to this program, it means that it is installed successfully.
+         * Verifying the Dobot Magician Driver
+            If an available COM port is displayed on the upper left corner of the DobotStudio page after the robotic arm is powered on, the Dobot Magician driver is installed successfully.
+
+3. Powering On/Off the Dobot Magician
+   
+   * Power on: align the Dobot Magician into its neutral position with its Forearm and Rear Arm constructing a 45-degree angle, and press down the power button in the base. Once the robotic arm is powered on, the LED indicator turns yellow, and all the stepper motors lock. And then wait about seven seconds, a short beep sound will be heard, and the LED indicator turns from yellow to green. Now the Dobot Magician is ready to use.
+    
+    * Power off: When the LED indicator is green, press down the power button to turn off the robotic arm. In this case, the Forearm moves slowly to the Rear Arm while the angle between them becomes small. Finally, the two arms reach a specific position.
+
+4. Getting Started
+   
+   This topic describes how to use the Dobot Magician to complete the teaching & playback function by saving three points in the MOVJ mode, allowing you to get the basic knowledge of the usage of the robotic arm.
+    
+    Prerequisites
+      
+      * The DobotStudio has been installed. For details, see 2.2 Installing the DobotStudio.
+      
+      * The Dobot Magician is powered on. For details, see 2.3 Powering On/Off the Dobot Magician.
+   
+   Procedure
+    * Step 1 Double-click the desktop shortcut to the DobotStudio.
+    * Step 2 Click Connect on the DobotStudio page.
+    * Step 3 Click Link Now.
+    * Step 4 Use DobotStudio to accopmplish a teaching & playback task.
+    * Step 5 Enter times in Loop text box. 
+    * Step 6 Click Start to perform the motions.
+    * Step 7 Click Exit to exit the Teaching & Playback page.
+    
+       
