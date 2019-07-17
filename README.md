@@ -183,8 +183,16 @@ Here is the brief introduction of how to operate the Dobot Magician with the sof
 ## SDK
 
 
-### API
 
+### API Interface Description
+There are two features of communication commands when communicating with Dobot controller:
+
+1. All commands can be returned to the controller; regarding to setup commands, the controller can cut command parameter domain and then return; while for getting commands, the controller can fill the parameters got in parameter domain and then return.
+2. Dobot controller supports two kind of commands: Immidinate instruction and queen instruction:
+* Immidinate instruction: Dobot controller will process the command once received regardless of whether there is the rest commands processing or not in the current controller;
+* Queue command: Dobot controller receives the queue instruction, the command is pressed into the controller internal instruction queue. Dobot controller will execute instructions in the order in which the instruction was pushed into the queue.
+For more detailed information about Dobot commands, please refer to Dobot protocol
+[here](http://www.dobot.it/wp-content/uploads/2018/03/dobot-api-en.pdf)
 
 ### Examples On Github
 * Python library could be found on github [repository](https://github.com/luismesas/pydobot)
