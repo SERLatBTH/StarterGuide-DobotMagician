@@ -19,7 +19,7 @@
 
 ## Where To Find
 
-Storage room - shelve ?
+Storage room - shelve C
 
 ## In The Box
 
@@ -72,28 +72,62 @@ Below is the picture which showing the official name of the different parts in D
 ![alt text](/images/armDescription.jpg)
 #### SuctionCup
 For connecting SuctionCup, you need the suction cup kit and an air pump.
-Connect the air pump's power cable SW1 to the SW1 connector on the Dobot Magician base' rear panel and the siganl cable GP1 to the GP1 connector.
-Insert a suction cup kit into the end's port, and fasten it with clamp fixing screw.
-Connect the air pump's air tube to the air tube connector of the suction cup kit
-Connect the servo's GP3 cable to the GP3 connector on the Forearm
+1. Connect the air pump's power cable SW1 to the SW1 connector on the Dobot Magician base' rear panel and the siganl cable GP1 to the GP1 connector.
+2. Insert a suction cup kit into the end's port, and fasten it with clamp fixing screw.
+3. Connect the air pump's air tube to the air tube connector of the suction cup kit
+4. Connect the servo's GP3 cable to the GP3 connector on the Forearm
 #### Gripper
 For connecting Gripper, you need the Gripper kit and an air pump which helps open and close the gripper.
-Dismantle the suction cup by unfastening its terminal strand with a 1.5mm hexagon wrench.
-Install a gripper kit to the servo with a 2.5mm hexagon wrench
-Connect the gripper kit and an air pump to the Dobot Magician in the same way as the suction cup kit is installed
+1. Dismantle the suction cup by unfastening its terminal strand with a 1.5mm hexagon wrench.
+2. Install a gripper kit to the servo with a 2.5mm hexagon wrench
+3. Connect the gripper kit and an air pump to the Dobot Magician in the same way as the suction cup kit is installed
 #### Pen
 A writing and drawing kit consists of a pen and a pen holder.
-Install a pen in the pen holder
-Fasten the writing and drawing kit to the Dobot Magician's end with clam fixing screw
-Posistion a sheet of paper on the work surface within the workspace of the Dobot Magician
+1. Install a pen in the pen holder
+2. Fasten the writing and drawing kit to the Dobot Magician's end with clam fixing screw
+3. Posistion a sheet of paper on the work surface within the workspace of the Dobot Magician
 #### 3D Printing
 3D printing kit contains extruder, hot end, motor cable, filament, and filament holder.
-Press down the lever on the extruder,
+1. Press down the lever on the extruder, and push down the filament to the bottom of the hole via the pulley
+2. Connect the end of the PTFE tube to the hot end and push it down to the bottom of the hot end, and connect the other end to the extruder
+3. Insert the filament intto the PTFE tube and push it down to the bottom of the hot end
+4. Fix the hot end on the Dobot Magician with lamp fixing screw
+5. Insert the heating cable to the interface4 on the Forearm, the fan cable to the interface5 and the thermistor cable to the interface6 
+6. Connect the extruder to the Stepper1 interface on the back of the base with motor cable
+7. Place the filament and the extruder to the filament holder
 
 #### Laser Engraving
 A laser kit includes a laser. Both grayscale-engraving and laser-engraving use the laser kit as the end-effector.
-Fasten the laser kit to the Dobot Magician's end with clamp fixing screw.
-Connect the laser's power cable to the SW4 connector on the Forearm and the TTL control cable to the GP5 connector
+1. Fasten the laser kit to the Dobot Magician's end with clamp fixing screw.
+2. Connect the laser's power cable to the SW4 connector on the Forearm and the TTL control cable to the GP5 connector
+
+#### WIFI Kit
+You can connect Dobot Magician to a PC via WIFI kit without USB cable, making Dobot Magician and PC in the same WLAN.
+Prerequisites:
+* Dobot Magician has been connected to a PC via USB cable
+* Dobot Magician has been connected to the power adapter
+* The WIFI name and password have been obtained and must be the same as that of PC
+Procedure:
+1. Connect the WIFI kit to the UART interface on the base
+2. Press down the power button to turn on the Dobot Magician
+3. Select the corresponding serial port from the serial drop-down list, and click Connect
+4. Click Setting>Wi-Fi. The Set Dobot Wi-Fi page is displayed.
+5. Set the related parameters on the Set Dobot Wi-Fi page
+6. Click OK.
+7. Click Disconnect on the lft pane of the DobotStudio page.
+8. After 2 second later, select IP address from the drop-down list on the upper left pane of the DobotStudio page and click Connect.
+
+#### Bluetooth Kit
+Dobot Magician can be connected to smart phone with Bluetooth.
+Please download the matched DobotStudio APP from the website [https://cn.dobot.cc/downloadcenter.html?sub_cat=69#sub-download](https://cn.dobot.cc/downloadcenter.html?sub_cat=69#sub-download).
+Prerequisites
+* Dobot Magician has been connected to the power adapter
+* The DobotStudio APP has been downloaded
+Procedure:
+1. Connect the Bluetooth kit to the UART interface on the base
+2. Press down the power button to turn on the Dobot Magician.
+After turning on, there are three short beep sounds and the blue LED indicator on the Bluetooth module is on and the green one is blinking.
+Turn on the Bluetooth and launch DobotStudio APP on your phone. And click Connect to connect with Dobot Magician.
 
 ### Connecting With PC And Software Setup
 
@@ -212,3 +246,6 @@ For more detailed information about Dobot commands, please refer to Dobot protoc
 ### Examples On Github
 * Python library could be found on github [repository](https://github.com/luismesas/pydobot)
 * More libraries and examples could be found on [github as well](https://github.com/topics/dobot)
+
+### More information
+For details how to operate Dobot Magician with DobotStudio APP, please see [here](https://www.youtube.com/watch?v=kyeXwuf17IY)
