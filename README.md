@@ -241,8 +241,14 @@ Here is the brief introduction of how to operate the Dobot Magician with the sof
 ## SDK
 Here document describes the secondary development environment building and demo codes in  multiple languages, frameworks, and systems, aiming to help secondary developer to understand common API of Dobot Magician and build development environment quickly.
 
-You can download the related file Dobot Demo v2.0 [here](https://www.dobot.cc/downloadcenter/dobot-magician.html?sub_cat=72#sub-download). Here we only explain the common system, you can find other language demo like Java, MFC, C#, VB, Qt, Pythonin the same package.
+To start developing apps for Dobot Magician, go to the [download center](https://www.dobot.cc/downloadcenter.html). Here you can find all the required documentation, SDKs and tools needed to develop applications for Dobot Magician.
 
+1. Download [Dobot Demo](https://www.dobot.cc/downloadcenter/dobot-magician.html?sub_cat=72#sub-download) by going to download center->dobot magician -> development protocol -> dobot demo.
+2. Extract the package content somewhere on your computer using compression tool.
+3. The package contains demos for all the supported platforms and programming languages.
+4. Open the demo for the desired programming language or platform using your preferred IDE.
+5. Inside you will find the API for the Dobot Magician as well an example code.
+6. Connect the Dobot Magician to your computer and run the demo. Note: in case you are using mobile application and would like to run the mobile demo, you will need to connect the Bluetooth module to be able to communicate with the robot. Go to the [Bluetooth module](#bluetooth-module) section to learn how to connect it.
 For common system, we have supported DLLs for secondary developer. You can call DLL directly to control Dobot Magician without development related to communication protocol. 
    
 * Dobot DLL
@@ -267,7 +273,24 @@ For common system, we have supported DLLs for secondary developer. You can call 
     
     export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH: DOBOT_LIB_PATH
 
+### SDK Demos Content
+
+1. MFC based on Visual studio C++2008 and above;
+2. Demo based on QT5.6;
+3. C# Demo based on Visual studio 2013 and above;
+4. Demo based on Python 3.5;
+5. STM32 Demo for embedded controller;
+6. Arduino Demo based on communication protocol (arduino mega board);
+7. VB Demo based on Visual Basic.net;
+8. Java Demo based on 32/64 bit JDK;
+9. Multi-control DemoForQt5.6;
+10. Dobot SDK Demo V1.0.0 for iOS;
+11. Bluetooth Demo for Android.
+
 ### API Interface Description
+
+TODO
+
 There are two features of communication commands when communicating with Dobot controller:
 
 1. All commands can be returned to the controller; regarding to setup commands, the controller can cut command parameter domain and then return; while for getting commands, the controller can fill the parameters got in parameter domain and then return.
@@ -276,6 +299,7 @@ There are two features of communication commands when communicating with Dobot c
 * Queue command: Dobot controller receives the queue instruction, the command is pressed into the controller internal instruction queue. Dobot controller will execute instructions in the order in which the instruction was pushed into the queue.
 For more detailed information about Dobot commands, please refer to Dobot protocol
 [here](http://www.dobot.it/wp-content/uploads/2018/03/dobot-api-en.pdf)
+
 
 ### Examples On Github
 * Python library could be found on github [repository](https://github.com/luismesas/pydobot)
