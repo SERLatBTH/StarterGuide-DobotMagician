@@ -8,11 +8,24 @@
 * [In The Box](#in-the-box)
 * [How To Make It Works](#how-to-make-it-works)
   * [Assembly](#assembly)
-  * [Powering Up](#powering-up)
+    * [SuctionCup](#suctioncup)
+    * [Gripper](#gripper)
+    * [Pen](#pen)
+    * [3D Printing](#3d-printing)
+    * [Laser Engraving](#laser-engraving)
+    * [WIFI Kit](#wifi-kit)
+    * [Bluetooth Kit](#bluetooth-kit)
+  * [Connecting With PC And Software Setup](#connecting-with-pc-and-software-setup)
 * [Operation](#operation)
-* [Device's Functionalities and Features](#device's-functionalities-and-features)
+  * [Quick start 1 - Teaching and Playback](#quick-start-1---teaching-and-playback)
+  * [Quick start 2 - Writing and Drawing](#quick-start-2---writing-and-drawing)
+  * [Quick start 3 - Blockly](#quick-start-3---blockly)
+* [Functions](#functions)
 * [SDK](#sdk)
-  * [Become A Developer](#becaome-a-developer)
+  * [SDK Demos Content](#sdk-demos-content)
+  * [Source code](#source-code)
+  * [API Interface Description](#api-interface-description)
+  * [Examples On Github](#examples-on-github)
 * [Putting The Device Back](#putting-the-device-back)
 * [More Documentations](more-documentations)
 
@@ -281,7 +294,7 @@ For common system, we have supported DLLs for secondary developer. You can call 
 10. Dobot SDK Demo V1.0.0 for iOS;
 11. Bluetooth Demo for Android.
 
-### Title
+### Source Code
 
 * Dobot DLL
   
@@ -323,5 +336,5 @@ For more detailed information about Dobot commands, please refer to Dobot protoc
 * Python library could be found on github [repository](https://github.com/luismesas/pydobot)
 * More libraries and examples could be found on [github as well](https://github.com/topics/dobot)
 
-### More information
+## More information
 For details how to operate Dobot Magician with DobotStudio APP, please see [here](https://www.youtube.com/watch?v=kyeXwuf17IY)
