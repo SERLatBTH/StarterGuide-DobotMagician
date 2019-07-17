@@ -336,5 +336,8 @@ For more detailed information about Dobot commands, please refer to Dobot protoc
 * Python library could be found on github [repository](https://github.com/luismesas/pydobot)
 * More libraries and examples could be found on [github as well](https://github.com/topics/dobot)
 
+## Putting The Device Back
+After finish using the device, it is important to turn off, disassemble and put it back in the box as it was found, then put the box back in its place.
+
 ## More information
 For details how to operate Dobot Magician with DobotStudio APP, please see [here](https://www.youtube.com/watch?v=kyeXwuf17IY)
