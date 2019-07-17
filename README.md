@@ -312,7 +312,7 @@ For common system, we have supported DLLs for secondary developer. You can call 
 
   ```export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:DOBOT_LIB_PATH```
 
- * For Mac OS, please add the following statement at the end of ~/.bash_profile file and restart computer.
+   * For Mac OS, please add the following statement at the end of ~/.bash_profile file and restart computer.
 
   Program 1.2 Add statement in Max OS
 
