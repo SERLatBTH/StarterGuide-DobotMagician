@@ -103,11 +103,15 @@ A laser kit includes a laser. Both grayscale-engraving and laser-engraving use t
 
 #### WIFI Kit
 You can connect Dobot Magician to a PC via WIFI kit without USB cable, making Dobot Magician and PC in the same WLAN.
+
 Prerequisites:
+
 * Dobot Magician has been connected to a PC via USB cable
 * Dobot Magician has been connected to the power adapter
 * The WIFI name and password have been obtained and must be the same as that of PC
+
 Procedure:
+
 1. Connect the WIFI kit to the UART interface on the base
 2. Press down the power button to turn on the Dobot Magician
 3. Select the corresponding serial port from the serial drop-down list, and click Connect
@@ -120,14 +124,18 @@ Procedure:
 #### Bluetooth Kit
 Dobot Magician can be connected to smart phone with Bluetooth.
 Please download the matched DobotStudio APP from the website [https://cn.dobot.cc/downloadcenter.html?sub_cat=69#sub-download](https://cn.dobot.cc/downloadcenter.html?sub_cat=69#sub-download).
-Prerequisites
+
+Prerequisites:
+
 * Dobot Magician has been connected to the power adapter
 * The DobotStudio APP has been downloaded
+
 Procedure:
+
 1. Connect the Bluetooth kit to the UART interface on the base
 2. Press down the power button to turn on the Dobot Magician.
-After turning on, there are three short beep sounds and the blue LED indicator on the Bluetooth module is on and the green one is blinking.
-Turn on the Bluetooth and launch DobotStudio APP on your phone. And click Connect to connect with Dobot Magician.
+
+After turning on, there are three short beep sounds and the blue LED indicator on the Bluetooth module is on and the green one is blinking. Turn on the Bluetooth and launch DobotStudio APP on your phone. And click Connect to connect with Dobot Magician.
 
 ### Connecting With PC And Software Setup
 
@@ -198,6 +206,7 @@ Here is the brief introduction of how to operate the Dobot Magician with the sof
       * The Dobot Magician is powered on. For details, see 3. Powering On/Off the Dobot Magician.
 
    Procedure
+   
     * Step 1 Double-click the desktop shortcut to the DobotStudio.
     * Step 2 Click Connect on the DobotStudio page.
     * Step 3 Click Link Now.
@@ -230,8 +239,33 @@ Here is the brief introduction of how to operate the Dobot Magician with the sof
    * Step 4 Run the program in Blockly: click Start to get the Dobot Magition to perform the movements of the blocks discloses. In this case, from (200,10,10) to (300,10,10).
 
 ## SDK
+Here document describes the secondary development environment building and demo codes in  multiple languages, frameworks, and systems, aiming to help secondary developer to understand common API of Dobot Magician and build development environment quickly.
 
+You can download the related file Dobot Demo v2.0 [here](https://www.dobot.cc/downloadcenter/dobot-magician.html?sub_cat=72#sub-download). Here we only explain the common system, you can find other language demo like Java, MFC, C#, VB, Qt, Pythonin the same package.
 
+For common system, we have supported DLLs for secondary developer. You can call DLL directly to control Dobot Magician without development related to communication protocol. 
+   
+* Dobot DLL
+    The source codes and precompiled files can be found in DobotDLL directory. Please use Qt 5.6 software to check source codes. In addition, the corresponding DLLs for Windows 32-bit, Windows 64-bit, Linux and Mac can also be found in this directory.
+   
+* Compiling
+    Please download the Qt version for your system and install it. The download path is [here](https://download.qt.io/archive/qt/5.6/5.6.0/).
+    
+    NOTICE: If the Qt library is used when compiling DLLs, please use the Qt software with MSVC compiler and compile Dobot DLLs with MSVC.
+    
+* Usage
+    * For Windows OS, please add the DLLs directory to environment variable Path.
+    * For Linux OS, please add the following statement at the end of ~/.bash_profile file and restart computer.
+    
+    Program 1.1 Add statement in Linux OS
+    
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:DOBOT_LIB_PATH
+   
+   * For Mac OS, please add the following statement at the end of ~/.bash_profile file and restart computer.
+    
+    Program 1.2 Add statement in Max OS
+    
+    export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH: DOBOT_LIB_PATH
 
 ### API Interface Description
 There are two features of communication commands when communicating with Dobot controller:
