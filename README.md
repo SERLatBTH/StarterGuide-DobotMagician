@@ -92,7 +92,7 @@ A writing and drawing kit consists of a pen and a pen holder.
 2. Connect the end of the PTFE tube to the hot end and push it down to the bottom of the hot end, and connect the other end to the extruder
 3. Insert the filament intto the PTFE tube and push it down to the bottom of the hot end
 4. Fix the hot end on the Dobot Magician with lamp fixing screw
-5. Insert the heating cable to the interface4 on the Forearm, the fan cable to the interface5 and the thermistor cable to the interface6 
+5. Insert the heating cable to the interface4 on the Forearm, the fan cable to the interface5 and the thermistor cable to the interface6
 6. Connect the extruder to the Stepper1 interface on the back of the base with motor cable
 7. Place the filament and the extruder to the filament holder
 
@@ -206,7 +206,7 @@ Here is the brief introduction of how to operate the Dobot Magician with the sof
       * The Dobot Magician is powered on. For details, see 3. Powering On/Off the Dobot Magician.
 
    Procedure
-   
+
     * Step 1 Double-click the desktop shortcut to the DobotStudio.
     * Step 2 Click Connect on the DobotStudio page.
     * Step 3 Click Link Now.
@@ -239,6 +239,7 @@ Here is the brief introduction of how to operate the Dobot Magician with the sof
    * Step 4 Run the program in Blockly: click Start to get the Dobot Magition to perform the movements of the blocks discloses. In this case, from (200,10,10) to (300,10,10).
 
 ## SDK
+
 Here document describes the secondary development environment building and demo codes in  multiple languages, frameworks, and systems, aiming to help secondary developer to understand common API of Dobot Magician and build development environment quickly.
 
 To start developing apps for Dobot Magician, go to the [download center](https://www.dobot.cc/downloadcenter.html). Here you can find all the required documentation, SDKs and tools needed to develop applications for Dobot Magician.
@@ -249,29 +250,7 @@ To start developing apps for Dobot Magician, go to the [download center](https:/
 4. Open the demo for the desired programming language or platform using your preferred IDE.
 5. Inside you will find the API for the Dobot Magician as well an example code.
 6. Connect the Dobot Magician to your computer and run the demo. Note: in case you are using mobile application and would like to run the mobile demo, you will need to connect the Bluetooth module to be able to communicate with the robot. Go to the [Bluetooth module](#bluetooth-module) section to learn how to connect it.
-For common system, we have supported DLLs for secondary developer. You can call DLL directly to control Dobot Magician without development related to communication protocol. 
-   
-* Dobot DLL
-    The source codes and precompiled files can be found in DobotDLL directory. Please use Qt 5.6 software to check source codes. In addition, the corresponding DLLs for Windows 32-bit, Windows 64-bit, Linux and Mac can also be found in this directory.
-   
-* Compiling
-    Please download the Qt version for your system and install it. The download path is [here](https://download.qt.io/archive/qt/5.6/5.6.0/).
-    
-    NOTICE: If the Qt library is used when compiling DLLs, please use the Qt software with MSVC compiler and compile Dobot DLLs with MSVC.
-    
-* Usage
-    * For Windows OS, please add the DLLs directory to environment variable Path.
-    * For Linux OS, please add the following statement at the end of ~/.bash_profile file and restart computer.
-    
-    Program 1.1 Add statement in Linux OS
-    
-    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:DOBOT_LIB_PATH
-   
-   * For Mac OS, please add the following statement at the end of ~/.bash_profile file and restart computer.
-    
-    Program 1.2 Add statement in Max OS
-    
-    export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH: DOBOT_LIB_PATH
+For common system, we have supported DLLs for secondary developer. You can call DLL directly to control Dobot Magician without development related to communication protocol.
 
 ### SDK Demos Content
 
@@ -286,6 +265,30 @@ For common system, we have supported DLLs for secondary developer. You can call 
 9. Multi-control DemoForQt5.6;
 10. Dobot SDK Demo V1.0.0 for iOS;
 11. Bluetooth Demo for Android.
+
+### Title
+
+* Dobot DLL
+  The source codes and precompiled files can be found in DobotDLL directory. Please use Qt 5.6 software to check source codes. In addition, the corresponding DLLs for Windows 32-bit, Windows 64-bit, Linux and Mac can also be found in this directory.
+
+* Compiling
+  * Please download the Qt version for your system and install it. The download path is [here](https://download.qt.io/archive/qt/5.6/5.6.0/).
+  * NOTICE: If the Qt library is used when compiling DLLs, please use the Qt software with MSVC compiler and compile Dobot DLLs with MSVC.
+
+* Usage
+  * For Windows OS, please add the DLLs directory to environment variable Path.
+  * For Linux OS, please add the following statement at the end of ~/.bash_profile file and restart computer.
+
+  Program 1.1 Add statement in Linux OS
+
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:DOBOT_LIB_PATH
+
+ * For Mac OS, please add the following statement at the end of ~/.bash_profile file and restart computer.
+
+  Program 1.2 Add statement in Max OS
+
+  export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH: DOBOT_LIB_PATH
+
 
 ### API Interface Description
 
