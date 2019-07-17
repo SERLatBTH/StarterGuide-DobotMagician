@@ -237,6 +237,21 @@ Here is the brief introduction of how to operate the Dobot Magician with the sof
    * Step 2 Select a block from the Dobot API and customize it: drag a JumpTo block to the programming area (Dobot API> Motion) and set (x,y,z) to (200,10,10)
    * Step 3 Extract another Dobot API block: pull out a JumpTo block to and set (x,y,z) to (300,10,10). put them together both blocks to create the desired program.
    * Step 4 Run the program in Blockly: click Start to get the Dobot Magition to perform the movements of the blocks discloses. In this case, from (200,10,10) to (300,10,10).
+   
+## Functions
+* 3D Printing
+  - As a robotic arm, Dobot Magician is precise enough for 3D printing models with nice finishing, it is comparable with many other 3D printers on the market. Thanks to its two extra stepper motor ports, Dobot Magician can also do double color 3D printing. Dobot Magician is compatible with mainstream open-source 3D printing
+* Laser Engraving (available in Educational version only)
+  - Dobot Magician can engrave not just lines, it can also sketch images with shades. Its powerful laser head is capable of engraving on harder materials like leather and wood. Only available in the Educational version.
+* Grabbing and Sucking
+  - With grabber and sucker accessories, Dobot Magician can move small objects. By customizing its movements, you can use it to help you out in some situations.
+* Teach & Playback
+  - You can build up a list of movements for Dobot Magician to execute. You can also make Dobot Magician memorize movements by simply dragging it, and make it repeat by one click. You can also customize its movements by more accurately setting parameters on its PC
+software, where the playback list can be manually edited.
+* Visualized Programming
+  - Dobot Blockly is a visualized programming environment developed for Dobot Magician, based on Google’s open-source platform Google Blockly. On Dobot Blockly you can program by simply putting puzzles together, it is intuitive and highly readable. It also integrated exclusive API for Dobot Magician, you can use them right away.
+* Multi-Dobot Cooperation
+  - Through WIFI connection or connecting both machines to an external board, you can control multiple Dobot Magicians all at once. This not only saves you controlling devices, but also improved efficiency in operating and calibrating.
 
 ## SDK
 
@@ -269,6 +284,7 @@ For common system, we have supported DLLs for secondary developer. You can call 
 ### Title
 
 * Dobot DLL
+  
   The source codes and precompiled files can be found in DobotDLL directory. Please use Qt 5.6 software to check source codes. In addition, the corresponding DLLs for Windows 32-bit, Windows 64-bit, Linux and Mac can also be found in this directory.
 
 * Compiling
@@ -281,18 +297,16 @@ For common system, we have supported DLLs for secondary developer. You can call 
 
   Program 1.1 Add statement in Linux OS
 
-  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:DOBOT_LIB_PATH
+  ```export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:DOBOT_LIB_PATH```
 
  * For Mac OS, please add the following statement at the end of ~/.bash_profile file and restart computer.
 
   Program 1.2 Add statement in Max OS
 
-  export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH: DOBOT_LIB_PATH
+  ```export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH: DOBOT_LIB_PATH```
 
 
 ### API Interface Description
-
-TODO
 
 There are two features of communication commands when communicating with Dobot controller:
 
@@ -300,6 +314,7 @@ There are two features of communication commands when communicating with Dobot c
 2. Dobot controller supports two kind of commands: Immidinate instruction and queen instruction:
 * Immidinate instruction: Dobot controller will process the command once received regardless of whether there is the rest commands processing or not in the current controller;
 * Queue command: Dobot controller receives the queue instruction, the command is pressed into the controller internal instruction queue. Dobot controller will execute instructions in the order in which the instruction was pushed into the queue.
+
 For more detailed information about Dobot commands, please refer to Dobot protocol
 [here](http://www.dobot.it/wp-content/uploads/2018/03/dobot-api-en.pdf)
 
