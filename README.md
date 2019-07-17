@@ -62,6 +62,8 @@ Here you can see the included components and their locations. The Dobot Magician
 
 ## How to make it works
 
+### Quick Start
+
 Here is the breif introduction of how to operate the Dobot Magician with the software DobotStudio, allowing you to quickly know and use the robotic arm. For details, please go [here](https://www.dobot.cc/downloadcenter.html?sub_cat=73#sub-download) to download the manuals.
 
 1. Connecting Cables to the Dobot Magician
@@ -138,4 +140,23 @@ Here is the breif introduction of how to operate the Dobot Magician with the sof
     * Step 6 Click Start to perform the motions.
     * Step 7 Click Exit to exit the Teaching & Playback page.
     
-       
+### Quick start 1 - Teaching and Playback
+  * Step 1 Preparation: mount the suction cup on the robot arm
+  * Step 2 Choose tool suction cup in DobotStudio: click Teaching & Playback i DobotStudio and choose SuctionCup in tools dropdown menu
+  * Step 3 Set and save date for point A: use DobotStudio to run the Dobot Magician to point A where the item is available so that the suction cup nudeges article. Click on the Suction Cup and then + Point.
+  * Step 4 Set and save data for Point B: use DobotStudio to run Dobot Magician to point B where the object is to placed, click out the check mark at SuctionCup, and click + Point.
+  * Step 5 Run the recorded program: Press Start to run the program, Dobot Magician will move item from point A to point B as they have been saved in the list.
+  You can also set the Dobot Magician by holding the button on the arm. Each time the button is released, a point is added to the list.
+  
+### Quick Start 2 - Writing and Drawing
+   * Step 1 Preparation: Mount the pen on the robot arm and place one paper in the robot's working area.
+   * Step 2 Select tool get pencil: click on Write & Draw and select the Pen tool
+   * Step 3 Select a figure: select a pre-programmed figure from input Shapes.
+   * Step 4 Adjust the tip height: click Z + or Z- to adjust the arm iZ-point so that the tip touches the paper. Press AutoZ.
+   * Step 5 Run writing and drawing function: click Start to get the Dobot Magician to draw and write.
+   
+### Quick Start 3 - Blockly
+   * Step 1 Start programming with Blochly: click on any command (such as Logic, Loop, or Variable) in the list on the left edge and pull out any block to the programming surface.
+   * Step 2 Select a block from the Dobot API and customize it: drag a JumpTo block to the programming area (Dobot API> Motion) and set (x,y,z) to (200,10,10)
+   * Step 3 Extract another Dobot API block: pull out a JumpTo block to and set (x,y,z) to (300,10,10). put them together both blocks to create the desired program.
+   * Step 4 Run the program in Blockly: click Start to get the Dobot Magition to perform the movements of the blocks discloses. In this case, from (200,10,10) to (300,10,10).
