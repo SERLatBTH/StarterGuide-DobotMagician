@@ -7,6 +7,7 @@
 * [Where To Find](#where-to-find)
 * [In The Box](#in-the-box)
 * [How To Make It Works](#how-to-make-it-works)
+  * [Assembly](#assembly)
   * [Powering Up](#powering-up)
 * [Operation](#operation)
 * [Device's Functionalities and Features](#device's-functionalities-and-features)
@@ -31,7 +32,7 @@ Here you can see the included components and their locations. The Dobot Magician
 3. Masking Tape (3D Printing)
 4. Feed Pipe (3D Printing)
 5. Accessories Box
-   5.1 Shippling list
+   5.1 Shipping list
    5.2 User Manual
    5.3 Glass Plate (3D Printing)
    5.4 Sensor Calibration Board
@@ -62,15 +63,32 @@ Here you can see the included components and their locations. The Dobot Magician
 
 ## How to make it works
 
-### Quick Start
+### Assembly
+The robot already assembled and just few steps is needed to get it to work
+1. Choose the tool you want to Connect
+2. Put it at the end of the robot arm by losing the screw below
+3. Follow the steps below for the tool you chose
 
-Here is the breif introduction of how to operate the Dobot Magician with the software DobotStudio, allowing you to quickly know and use the robotic arm. For details, please go [here](https://www.dobot.cc/downloadcenter.html?sub_cat=73#sub-download) to download the manuals.
+#### SuctionCup
+
+#### Gripper
+
+#### Pen
+
+#### 3D Printing
+
+#### Laser Engraving
+
+
+### Connecting With PC And Software Setup
+
+Here is the brief introduction of how to operate the Dobot Magician with the software DobotStudio, allowing you to quickly know and use the robotic arm. For details, please go [here](https://www.dobot.cc/downloadcenter.html?sub_cat=73#sub-download) to download the manuals.
 
 1. Connecting Cables to the Dobot Magician
 
-   Step 1  Connect the Dobot Magician to your compututer with the supplied USB cable
+   Step 1  Connect the Dobot Magician to your computer with the supplied USB cable
 
-   Step 2  Connect the Dobot Magician to the electrical outlet with the supplied power adaper
+   Step 2  Connect the Dobot Magician to the electrical outlet with the supplied power adapter
 
 2. Installing the DobotStudio
 
@@ -128,14 +146,13 @@ Here is the breif introduction of how to operate the Dobot Magician with the sof
     Prerequisites
 
       * The DobotStudio has been installed. For details, see 2. Installing the DobotStudio.
-
       * The Dobot Magician is powered on. For details, see 3. Powering On/Off the Dobot Magician.
 
    Procedure
     * Step 1 Double-click the desktop shortcut to the DobotStudio.
     * Step 2 Click Connect on the DobotStudio page.
     * Step 3 Click Link Now.
-    * Step 4 Use DobotStudio to accopmplish a teaching & playback task.
+    * Step 4 Use DobotStudio to accomplish a teaching & playback task.
     * Step 5 Enter times in Loop text box.
     * Step 6 Click Start to perform the motions.
     * Step 7 Click Exit to exit the Teaching & Playback page.
@@ -158,7 +175,17 @@ Here is the breif introduction of how to operate the Dobot Magician with the sof
    * Step 5 Run writing and drawing function: click Start to get the Dobot Magician to draw and write.
 
 ### Quick Start 3 - Blockly
-   * Step 1 Start programming with Blochly: click on any command (such as Logic, Loop, or Variable) in the list on the left edge and pull out any block to the programming surface.
+   * Step 1 Start programming with Blockly: click on any command (such as Logic, Loop, or Variable) in the list on the left edge and pull out any block to the programming surface.
    * Step 2 Select a block from the Dobot API and customize it: drag a JumpTo block to the programming area (Dobot API> Motion) and set (x,y,z) to (200,10,10)
    * Step 3 Extract another Dobot API block: pull out a JumpTo block to and set (x,y,z) to (300,10,10). put them together both blocks to create the desired program.
    * Step 4 Run the program in Blockly: click Start to get the Dobot Magition to perform the movements of the blocks discloses. In this case, from (200,10,10) to (300,10,10).
+
+## SDK
+
+
+### API
+
+
+### Examples On Github
+* Python library could be found on github [repository](https://github.com/luismesas/pydobot)
+* More libraries and examples could be found on [github as well](https://github.com/topics/dobot)
