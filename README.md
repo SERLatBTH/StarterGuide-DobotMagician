@@ -68,17 +68,32 @@ The robot already assembled and just few steps is needed to get it to work
 1. Choose the tool you want to Connect
 2. Put it at the end of the robot arm by losing the screw below
 3. Follow the steps below for the tool you chose
-
+Below is the picture which showing the official name of the different parts in Dobot Magician arm.
+![alt text](/images/armDescription.jpg)
 #### SuctionCup
-
+For connecting SuctionCup, you need the suction cup kit and an air pump.
+Connect the air pump's power cable SW1 to the SW1 connector on the Dobot Magician base' rear panel and the siganl cable GP1 to the GP1 connector.
+Insert a suction cup kit into the end's port, and fasten it with clamp fixing screw.
+Connect the air pump's air tube to the air tube connector of the suction cup kit
+Connect the servo's GP3 cable to the GP3 connector on the Forearm
 #### Gripper
-
+For connecting Gripper, you need the Gripper kit and an air pump which helps open and close the gripper.
+Dismantle the suction cup by unfastening its terminal strand with a 1.5mm hexagon wrench.
+Install a gripper kit to the servo with a 2.5mm hexagon wrench
+Connect the gripper kit and an air pump to the Dobot Magician in the same way as the suction cup kit is installed
 #### Pen
-
+A writing and drawing kit consists of a pen and a pen holder.
+Install a pen in the pen holder
+Fasten the writing and drawing kit to the Dobot Magician's end with clam fixing screw
+Posistion a sheet of paper on the work surface within the workspace of the Dobot Magician
 #### 3D Printing
+3D printing kit contains extruder, hot end, motor cable, filament, and filament holder.
+Press down the lever on the extruder,
 
 #### Laser Engraving
-
+A laser kit includes a laser. Both grayscale-engraving and laser-engraving use the laser kit as the end-effector.
+Fasten the laser kit to the Dobot Magician's end with clamp fixing screw.
+Connect the laser's power cable to the SW4 connector on the Forearm and the TTL control cable to the GP5 connector
 
 ### Connecting With PC And Software Setup
 
