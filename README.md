@@ -340,5 +340,5 @@ For more detailed information about Dobot commands, please refer to Dobot protoc
 After finish using the device, it is important to turn off, disassemble and put it back in the box as it was found, then put the box back in its place.
 
 ## More information
-For details how to operate Dobot Magician with DobotStudio APP, please see [here](https://www.youtube.com/watch?v=kyeXwuf17IY)
-For more detailed tutorial videos, you can find it [here](https://www.dobot.cc/videos-center.html?videogallery_id=20#videos).
+* For details how to operate Dobot Magician with DobotStudio APP, please see [here](https://www.youtube.com/watch?v=kyeXwuf17IY)
+* For more detailed tutorial videos, you can find it [here](https://www.dobot.cc/videos-center.html?videogallery_id=20#videos).
